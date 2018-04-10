@@ -101,7 +101,7 @@ Snitch](https://www.obdev.at/products/littlesnitch/).  It can be
 annoying at first, as you decide if you want to allow port 42 to
 foo.com; but it remembers well.
 
-Its smaller sibming, [Micro
+Its smaller sibling, [Micro
 Snitch](https://www.obdev.at/products/microsnitch/), is useful for
 alerting you when your microphone or camera are being used by anything.
 
