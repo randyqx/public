@@ -1,13 +1,15 @@
 # Signed git commits
 
-This is a pgp signed repo.  I.e. commits must be signed by the
-committer.  It uses an old recipe from sra.
+This is a hack from srs on how to enforce a policy that commits to a
+git repository are pgp signed by the committer.  The purpose is to
+provide attribution of all changes and, one hopes, thereby deter
+malicious commits.
 
-Sign commits to this repo using
+One signs commits to a repo using
 
    ```git commit -S <foux>```
 
-this is enforced by having
+which is enforced by having
 
 ```
   [commit]
@@ -73,4 +75,4 @@ and by having `<repo>/.git/hooks/pre-push`
 
 ---
 
-2017.10.20
+2018.04.10
