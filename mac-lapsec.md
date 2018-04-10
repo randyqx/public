@@ -9,7 +9,7 @@ If this all seems too paranoid, perhaps you should look at [Paranoia
 One always begins by thinking about what assets one is protecting and
 what the threats are to those assets.
 
-There will be (and probsbly have been) security incidents.  Whether you
+There will be (and probably have been) security incidents.  Whether you
 detect them depends on how well you instrument.  How you handle them
 depends on how well you prepare; see final item on this page.
 
@@ -57,22 +57,22 @@ generate and store passwords.
 Consider [YubiKey](https://www.yubico.com/) or some equivalent.  I use
 it in combination with remembered phrases, [Something You Have and
 Something You
-Know](https://git.rg.net/randy/randy/src/master/yubikey-static.md)
+Know](https://github.com/randyqx/public/blob/master/yubikey-static.md)
 
 Again, be very aware of fishing and other credential exposure.
 
 ## Backup, Backup, Backup
 
 Time Machine is strongly recommended.  A USB hard drive is simple and
-inexpensive and will save your life.  When you initialize it, Remember
+inexpensive and will save your life.  When you initialize it, remember
 to create it as encrypted and stash the passphrase somewhere safe.
 
 You may alwo want to keep a distant backup far off site.  A lot of folk
-lost everything in the wildfires.
+lost everything in the California wildfires.
 
 Use [Arq](https://www.arqbackup.com/) in encrypted mode to off-site
 servers, AWS, or Google.  I prefer Google, as they have a better
-reputation of rprotecting customers' data.
+reputation for protecting customers' data.
 
 ## Full Disk Encryption
 
@@ -100,6 +100,10 @@ Control and Block outgoing traffic by running [Little
 Snitch](https://www.obdev.at/products/littlesnitch/).  It can be
 annoying at first, as you decide if you want to allow port 42 to
 foo.com; but it remembers well.
+
+Its smaller sibming, [Micro
+Snitch](https://www.obdev.at/products/microsnitch/), is useful for
+alerting you when your microphone or camera are being used by anything.
 
 ## Encrypt
 
@@ -137,17 +141,18 @@ instructions](https://github.com/drduh/macOS-Security-and-Privacy-Guide#firmware
 If your source is copied or stolen, they have your principal asset.
 An attacker can copy it or they can use it to find vulnerabilities.
 
-Move off GitHub; one password slip by any single employee and you're dead.
+Do not use GitHub; one password slip by any single employee and you're
+toast.
 
-You are only using GitHub as a git repo; a simple UNIX/Linux server with
-an encrypted drive will do the job.
+If you are only using GitHub as a git repository; a simple UNIX/Linux
+server with an encrypted drive will do the job.
 
 Guess how Juniper lost massive credibility when an attacker got to their
 repository and inserted two backdoors.
 
 If you want attribution in case of backdoors and other malicious
 additions, consider [GPG signed
-commits](https://git.rg.net/randy/randy/src/master/signed-commits.md).
+commits](https://github.com/randyqx/public/blob/master/signed-commits.md).
 
 ## Secure Mail
 
@@ -160,7 +165,10 @@ Use secure mail transports, i.e. imaps and smtps.
 Use [Firefox Focus](https://www.mozilla.org/en-US/firefox/focus/) as
 your browser on phones and tablets.
 
-Block browser tracking using Privacy Badger and Ublock Origin
+Block browser tracking using Privacy Badger and Ublock Origin.
+
+Block JavaScript, as much as you can, using a extension such as
+NoScript.
 
 It is OK to let your browser remember passwords; but prefer 1Password.
 
@@ -173,4 +181,4 @@ notification procedures,
 
 ---
 
-2017.12.07
+2018.04.10
