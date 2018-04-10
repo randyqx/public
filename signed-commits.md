@@ -1,7 +1,7 @@
 # Signed git commits
 
-This is a hack from srs on how to enforce a policy that commits to a
-git repository are pgp signed by the committer.  The purpose is to
+This is a hack developed by sra for enforcing a policy that commits to
+a git repository are pgp signed by the committer.  The purpose is to
 provide attribution of all changes and, one hopes, thereby deter
 malicious commits.
 
